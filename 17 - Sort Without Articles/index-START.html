@@ -46,8 +46,11 @@
   <ul id="bands"></ul>
 
 <script>
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+const bands = [{key: 'Plot in You', value: 'The Plot in You'}, {key:'Devil Wears Prada', value: 'Devil Wears Prada'}, {key:'Pierce the Veil', value: 'Pierce the Veil'}, {key: 'Norma Jean', value: 'Norma Jean'}, {key: 'Bled', value: 'The Bled'}, {key: 'Say Anything', value: 'Say Anything'}, {key: 'Midway State', value: 'The Midway State'}, {key:'We Came as Romans', value: 'We Came as Romans'}, {key: 'Counterparts', value: 'Counterparts'}, {key: 'Oh, Sleeper', value: 'Oh, Sleeper'}, {key: 'Skylit Drive', value: 'A Skylit Drive'}, {key: 'Anywhere But Here', value: 'Anywhere But Here'}, {key:'Old Dog', value: 'An Old Dog'}];
 
+const orderedBands = bands.sort((a,b) => a.key.localeCompare(b.key))
+
+console.log(orderedBands)
 
 </script>
 
